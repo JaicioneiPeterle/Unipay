@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Uniplay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100%;
+            min-height: 100vh;   /* PCs */
+            min-height: 100dvh;  /* mobiles modernos */
+        }
+
+        body {
+            background: url("https://raw.githubusercontent.com/JaicioneiPeterle/Unipay/refs/heads/main/ok.JPG") no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 420px;
+            padding: 24px;
+            background: #020617;
+            border-radius: 12px;
+            text-align: center;
+
+        }
+
+        @media (max-width: 768px) {
+            body {background-size: contain; 
+                  background-color: #000;
+            }
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 25px;
+            color: #cbd5f5;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-video {
+            background: #dc2626;
+        }
+
+        .btn-video:hover {
+            background: #b91c1c;
+        }
+
+        .btn-whatsapp {
+            background: #16a34a;
+        }
+
+        .btn-whatsapp:hover {
+            background: #15803d;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bem-vindo</h1>
+        <p>Clique abaixo para assistir o vídeo ou falar comigo no WhatsApp</p>
+
+        <!-- LINK DO VÍDEO -->
+        <a 
+            href="https://drive.google.com/file/d/1awJZdq2lTbfVM01pkxLrz4fa-wGexEYW/view?usp=sharing" 
+            target="_blank" 
+            class="btn btn-video">
+            ▶ Assistir Vídeo
+        </a>
+
+        <!-- LINK DO WHATSAPP -->
+        <a 
+            href="https://wa.me/5548988432113?" 
+            target="_blank" 
+            class="btn btn-whatsapp">
+            💬 Falar no WhatsApp
+        </a>
+
+        <footer>
+            © 2026 - Seu site
+        </footer>
+    </div>
+
+</body>
+</html>
